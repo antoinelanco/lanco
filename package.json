@@ -1,0 +1,18 @@
+{
+  "name": "lanco",
+  "main": "./lib/lanco",
+  "version": "0.0.0",
+  "description": "highlight for lanco language",
+  "keywords": [
+  ],
+  "activationCommands": {
+    "atom-workspace": "lanco:toggle"
+  },
+  "repository": "https://github.com/atom/lanco",
+  "license": "MIT",
+  "engines": {
+    "atom": ">=1.0.0 <2.0.0"
+  },
+  "dependencies": {
+  }
+}

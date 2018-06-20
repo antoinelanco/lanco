@@ -1,0 +1,26 @@
+{
+  "context-menu": {
+    "atom-text-editor": [
+      {
+        "label": "Toggle lanco",
+        "command": "lanco:toggle"
+      }
+    ]
+  },
+  "menu": [
+    {
+      "label": "Packages",
+      "submenu": [
+        {
+          "label": "lanco",
+          "submenu": [
+            {
+              "label": "Toggle",
+              "command": "lanco:toggle"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
