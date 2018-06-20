@@ -2,8 +2,8 @@
 
 # Regex to convert keys to unquoted: '(include|match|captures|begin|end|beginCaptures|endCaptures|name|patterns|0|1|2|3|4|5|6|7|8|9|comment|fileTypes|scopeName|repository|contentName|firstLineMatch|foldingStartMarker|foldingStopMarker)':
 
-scopeName: 'source.lanco' # <scope> should be a short, unique indicator for the language ("js", "php", "c", etc.)
-name: 'Lanco' # The title that will show up in grammar selection and on your status bar.
+scopeName: 'source.rlanco' # <scope> should be a short, unique indicator for the language ("js", "php", "c", etc.)
+name: 'RLanco' # The title that will show up in grammar selection and on your status bar.
 fileTypes: [ # An array of file extensions.
   'rlanco'
   'rlan'
@@ -13,12 +13,24 @@ foldingStartMarker: '' # A regular expression that checks for the start of a fol
 foldingStopMarker: '' # A regular expression that checks for the end of a foldable area (such as `}`). If both folding markers are matched in the same line, there will be no foldable area.
 patterns: [ # An array of individual pattern declarations.
   {
-    match: '\\bLanco\\b'
+    match: '\\b(Lanco)\\b'
     name : 'entity.other.lanco'
   }
   {
-    match = '\\b(if|switch|find|exists|or|and)\\b'
-    name = 'keyword.control.untitled'
+    match = '\\b(If|Switch|Find|Exists|Or|And|Else|Default|Case|HD|TL|OR|AND|Tab|REV|Snd|Fst)\\b'
+    name = 'keyword.name.function'
+  }
+  {
+    match: '\\b(true|false)\\b'
+    name : 'constant.language'
+  }
+  {
+    match: '\\b(\\+|\\=\\=|\\-)\\b'
+    name : 'keyword.operator'
+  }
+  {
+    match: '\\b(Fonction|Main|Definition)\\b'
+    name : 'entity.name.section'
   }
   {
     match: '' # A regular expression that matches some content. Optional.
