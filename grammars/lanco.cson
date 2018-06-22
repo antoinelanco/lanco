@@ -17,7 +17,7 @@ patterns: [ # An array of individual pattern declarations.
     name : 'entity.other.lanco'
   }
   {
-    match = '\\b(if|else|switch|find|exists|or|and|fst|snd|length|rev|hd|tl|add|sub|equal|exception)\\b'
+    match = '\\b(if|else|switch|find|exists|or|and|fst|snd|length|rev|hd|tl|add|sub|div|mul|equal|exception)\\b'
     name = 'keyword.control.untitled'
   }
   {
