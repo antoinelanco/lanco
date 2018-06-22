@@ -1,7 +1,7 @@
 {
   "name": "lanco",
   "main": "./lib/lanco",
-  "version": "0.5.0",
+  "version": "0.6.0",
   "description": "highlight for lanco language",
   "keywords": [],
   "activationCommands": {
