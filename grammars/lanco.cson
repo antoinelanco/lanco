@@ -17,12 +17,16 @@ patterns: [ # An array of individual pattern declarations.
     name : 'entity.other.lanco'
   }
   {
-    match = '\\b(if|else|switch|find|exists|or|and|fst|snd|length|rev|hd|tl|add|sub|div|mul|equal|exception)\\b'
+    match = '\\b(if|else|switch|find|exists|or|and|fst|snd|length|rev|hd|tl|add|sub|div|mul|equal|exception|let|in)\\b'
     name = 'keyword.control.untitled'
   }
   {
     match: '\\b(true|false)\\b'
     name : 'constant.language'
+  }
+  {
+    match: '#[^\\\n]*\\\n'
+    name : 'comment'
   }
   {
     match: '\\b(fun)\\b'
